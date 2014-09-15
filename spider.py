@@ -104,7 +104,7 @@ class Spider(object):
 	
 def main():
 	path=os.getcwd()
-	link_file = open(path + '\link.txt','r')
+	link_file = open(path + os.sep+'link.txt','r')
 	spiders = []                    #通过这个可以知道文件提供了多少个网址
 	for eachLink in link_file.readlines():
 		eachLink = eachLink.replace('\n','')            #将每行网址末尾的\n去掉
